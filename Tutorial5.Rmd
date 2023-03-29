@@ -35,3 +35,12 @@ Note that the `echo = FALSE` parameter was added to the code chunk to prevent pr
  library(tidyverse)
  library(palmerpenguins)
 ```
+
+
+# Examining the relationship between bill length and flipper length.
+```{r}
+library(palmerpenguins)
+data(package = 'palmerpenguins')
+ggplot(penguins, aes(x = bill_depth_mm , y = flipper_length_mm, color = species)) +
+geom_point()
+```
